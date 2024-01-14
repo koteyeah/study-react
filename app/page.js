@@ -5,7 +5,9 @@ import { Headline } from './components/Headline'
 export default function Home() {
   return (
     <main className={styles.main}>
-        <Headline title="page.js" />
+        <Headline title="page.js">
+          <code className={styles.code}>app/page.js</code>
+        </Headline>
         <Links />
     </main>
   )
