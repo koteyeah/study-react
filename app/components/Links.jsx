@@ -1,4 +1,4 @@
-import styles from '../page.module.css'
+import styles from '/app/page.module.css'
 
 const ITEMS =[
     { href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app",
