@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
         <Headline title="page.js">
-          <code className={styles.code}>app/page.js</code>
+          <code className={styles.code}>app/other_page/page.jsx</code>
         </Headline>
         <Link href="../">メインページへ</Link>
         <Links />
