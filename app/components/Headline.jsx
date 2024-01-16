@@ -2,9 +2,6 @@ import { useCallback } from 'react';
 import styles from '/app/page.module.css';
 
 export function Headline(props){
-  const handleClick=useCallback((e)=>{
-    console.log(e.target)
-  },[])
   return(
       <div className={styles.description}>
       <p>

@@ -7,6 +7,7 @@ import { Links } from '@/app/components/Links'
 import { useEffect } from 'react'
 import { CountButton } from './components/CountButton'
 export default function Home() {
+  let count=3;
   //このDOMがレンダリングされる瞬間に実行される関数
   useEffect(()=>{
     document.body.style.backgroundColor="red";
@@ -14,13 +15,13 @@ export default function Home() {
     return()=>{
     document.body.style.backgroundColor="";
     }
-    },[])
+    },[count])
   return (
     <main className={styles.main}>
         <Headline title="page.jsx">
           <code className={styles.code}>app/page.jsx</code>
         </Headline>
-        <CountButton/>
+        <CountButton count={count}/>
         <Link href="/other_page">別ページへ</Link>
         <Links/>
     </main>
