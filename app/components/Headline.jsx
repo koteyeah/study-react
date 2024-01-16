@@ -1,6 +1,6 @@
-"use client"
 import { useCallback } from 'react';
-import styles from '/app/page.module.css'
+import styles from '/app/page.module.css';
+
 export function Headline(props){
   const handleClick=useCallback((e)=>{
     console.log(e.target)
@@ -20,7 +20,6 @@ export function Headline(props){
           By{' '}
           </a>
         </div>
-        <button onClick={handleClick}>関数発動ボタン</button>
       </div>
   );
 }

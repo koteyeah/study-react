@@ -5,6 +5,7 @@ import { Headline } from '/app/components/Headline'
 import Link from 'next/link'
 import { Links } from '@/app/components/Links'
 import { useEffect } from 'react'
+import { CountButton } from './components/CountButton'
 export default function Home() {
   //このDOMがレンダリングされる瞬間に実行される関数
   useEffect(()=>{
@@ -19,6 +20,7 @@ export default function Home() {
         <Headline title="page.jsx">
           <code className={styles.code}>app/page.jsx</code>
         </Headline>
+        <CountButton/>
         <Link href="/other_page">別ページへ</Link>
         <Links/>
     </main>
